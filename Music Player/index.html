@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="player">
+
+    <!-- RADIO STATES -->
+    <input type="radio" name="song" id="s1" checked>
+    <input type="radio" name="song" id="s2">
+    <input type="radio" name="song" id="s3">
+
+    <!-- SONG 1 -->
+    <div class="track t1">
+        <h2>Shape of You</h2>
+        <p>Ed Sheeran</p>
+        <audio controls>
+            <source src="songs/shape_of_you.mp3">
+        </audio>
+
+        <div class="controls">
+            <label for="s3" class="btn">⏮</label>
+            <span class="btn play">▶</span>
+            <label for="s2" class="btn">⏭</label>
+        </div>
+    </div>
+
+    <!-- SONG 2 -->
+    <div class="track t2">
+        <h2>All of the Stars</h2>
+        <p>Kendrick Lamar and SZA</p>
+        <audio controls>
+            <source src="songs/all_of_the_stars.mp3">
+        </audio>
+
+        <div class="controls">
+            <label for="s1" class="btn">⏮</label>
+            <span class="btn play">▶</span>
+            <label for="s3" class="btn">⏭</label>
+        </div>
+    </div>
+
+    <!-- SONG 3 -->
+    <div class="track t3">
+        <h2>Hotel California</h2>
+        <p>Eagles</p>
+        <audio controls>
+            <source src="songs/hotel_california.mp3">
+        </audio>
+
+        <div class="controls">
+            <label for="s2" class="btn">⏮</label>
+            <span class="btn play">▶</span>
+            <label for="s1" class="btn">⏭</label>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
